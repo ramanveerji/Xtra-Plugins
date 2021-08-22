@@ -34,7 +34,7 @@ async def shazam(file):
 
 async def convert_to_audio(vid_path):
     stark_cmd = f"ffmpeg -i {vid_path} -map 0:a friday.mp3"
-    await runcmd(stark_cmd)
+    await run_cmd(stark_cmd)
     final_warner = "friday.mp3"
     if not os.path.exists(final_warner):
         return None
