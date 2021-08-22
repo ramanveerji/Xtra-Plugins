@@ -101,9 +101,9 @@ async def playout_ended_handler(group_call, filename):
     group_call.input_filename = raw_file
 
 @friday_on_cmd(
-    ["skip_vc"],
+    ["skip"],
     is_official=False,
-    cmd_help={"help": "Skip Song in Playlist.", "example": "{ch}skip_vc (key_len)"}
+    cmd_help={"help": "Skip Song in Playlist.", "example": "{ch}skip (key_len)"}
 )
 async def ski_p(client, message):
     m_ = await edit_or_reply(message, "`Please Wait!`")
@@ -145,9 +145,9 @@ async def ski_p(client, message):
    
                 
 @friday_on_cmd(
-    ["play_vc"],
+    ["play"],
     is_official=False,
-    cmd_help={"help": "Play The Song In VC Directly From Youtube Or Telegram!", "example": "{ch}play_vc (song query)"},
+    cmd_help={"help": "Play The Song In VC Directly From Youtube Or Telegram!", "example": "{ch}play (song query)"},
 )
 async def play_m(client, message):
     group_call = GPC.get((message.chat.id, client.me.id))
