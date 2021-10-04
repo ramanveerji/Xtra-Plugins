@@ -29,10 +29,10 @@ async def email_info(email_: str):
   return info
   
 @friday_on_cmd(
-    ["iev"],
+    ["iev", "cm"],
     cmd_help={
         "help": "Check if Mail is Valid Or Not.",
-        "example": "{ch}iev idiot@gmail.com",
+        "example": "{ch}iev or {ch}cm idiot@gmail.com",
     },
 )
 async def get_info_by_email(client, message):
