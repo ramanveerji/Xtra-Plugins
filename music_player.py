@@ -429,9 +429,9 @@ async def rejoinvcpls(client, message):
 
 
 @friday_on_cmd(
-    ["leavevc"],
+    ["stop"],
     is_official=False,
-    cmd_help={"help": "Leave Voice Call!", "example": "{ch}leavevc"},
+    cmd_help={"help": "Leave Voice Call!", "example": "{ch}stop"},
 )
 async def leave_vc_test(client, message):
     group_call = GPC.get((message.chat.id, client.me.id))
