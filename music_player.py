@@ -395,9 +395,9 @@ async def kill_vc_(client, message):
 
 
 @friday_on_cmd(
-    ["rvc"],
+    ["replay"],
     is_official=False,
-    cmd_help={"help": "Replay Song In VC!", "example": "{ch}rvc"},
+    cmd_help={"help": "Replay Song In VC!", "example": "{ch}replay"},
 )
 async def replay(client, message):
     group_call = GPC.get((message.chat.id, client.me.id))
@@ -429,9 +429,9 @@ async def rejoinvcpls(client, message):
 
 
 @friday_on_cmd(
-    ["stop"],
+    ["end"],
     is_official=False,
-    cmd_help={"help": "Leave Voice Call!", "example": "{ch}stop"},
+    cmd_help={"help": "Leave Voice Call!", "example": "{ch}end"},
 )
 async def leave_vc_test(client, message):
     group_call = GPC.get((message.chat.id, client.me.id))
