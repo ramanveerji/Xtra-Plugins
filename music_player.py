@@ -375,9 +375,9 @@ async def wow_dont_stop_songs(client, message):
         
         
 @friday_on_cmd(
-    ["stopvc"],
+    ["stop"],
     is_official=False,
-    cmd_help={"help": "Stop VoiceChat!", "example": "{ch}stopvc"},
+    cmd_help={"help": "Stop VoiceChat!", "example": "{ch}stop"},
 )
 async def kill_vc_(client, message):
     group_call = GPC.get((message.chat.id, client.me.id))
