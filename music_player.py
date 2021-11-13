@@ -375,9 +375,9 @@ async def wow_dont_stop_songs(client, message):
         
         
 @friday_on_cmd(
-    ["leave"],
+    ["stop"],
     is_official=False,
-    cmd_help={"help": "Leave VoiceChat!", "example": "{ch}leave"},
+    cmd_help={"help": "Stop VoiceChat!", "example": "{ch}stop"},
 )
 async def kill_vc_(client, message):
     group_call = GPC.get((message.chat.id, client.me.id))
@@ -429,9 +429,9 @@ async def rejoinvcpls(client, message):
 
 
 @friday_on_cmd(
-    ["end"],
+    ["leave"],
     is_official=False,
-    cmd_help={"help": "Leave Voice Call!", "example": "{ch}end"},
+    cmd_help={"help": "Leave Voice Call!", "example": "{ch}leave"},
 )
 async def leave_vc_test(client, message):
     group_call = GPC.get((message.chat.id, client.me.id))
