@@ -149,10 +149,12 @@ async def insult_hard(client, message):
         "example": "{ch}lmgtf hello world",
     })
 async def lmgtfm(client, message):
+    lmgt = await edit_or_reply(message, "`Working on it.....`")
     query = get_text(message)
     query = query.replace(" ", "+")
     url = f"https://letmegooglethat.com/?q={query}"
-    await edit_or_reply(message, f"You have to check [this]({url}) .")
+    output = f"You have to check [this]({url}) ."
+    await lmgt.edit(output, disable_web_page_preview=True)
 
 
 @friday_on_cmd(
