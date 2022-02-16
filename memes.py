@@ -153,7 +153,7 @@ async def lmgtfm(client, message):
     query = get_text(message)
     query = query.replace(" ", "+")
     url = f"https://letmegooglethat.com/?q={query}"
-    output = f"You have to check [this]({url}) ."
+    output = f"**You have to check** [this]({url}) ."
     await lmgt.edit(output, disable_web_page_preview=True)
 
 
