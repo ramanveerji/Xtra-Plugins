@@ -152,7 +152,7 @@ async def lmgtfm(client, message):
     query = get_text(message)
     query = query.replace(" ", "+")
     url = f"https://letmegooglethat.com/?q={query}"
-    await edit_or_reply(message, f"You should click [here]({url}) .", disable_web_page_preview=True)
+    await edit_or_reply(message, f"You should click [here]({url}) .")
 
 
 @friday_on_cmd(
