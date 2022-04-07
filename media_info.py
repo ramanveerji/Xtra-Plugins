@@ -16,7 +16,7 @@ page_ = telegraph.create_account(short_name="Friday 🇮🇳")
 
 
 
-@friday_on_cmd(['mediainfo', 'mediadata'],
+@friday_on_cmd(['mediainfo', 'mediadata', 'minfo', 'mi'],
                cmd_help={
                "help": "Get Full Info Of A Media.",
                "example": "{ch}mediainfo (replying to file)"
