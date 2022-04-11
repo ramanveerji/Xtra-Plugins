@@ -6,7 +6,6 @@
 #
 # All rights reserved.
 
-import asyncio
 import requests
 import os
 import requests
@@ -20,7 +19,6 @@ from main_startup.helper_func.logger_s import LogIt
 import os
 
 import asyncurban
-from asyncurban import UrbanDictionary
 @friday_on_cmd(['ud', 'urban'],
                cmd_help={
                "help": "Get Meaning Of A Work From Query",
