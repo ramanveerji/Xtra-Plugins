@@ -19,7 +19,7 @@ from main_startup.helper_func.basic_helpers import edit_or_reply, get_text, huma
 from main_startup.helper_func.logger_s import LogIt
 import os
 
-import asyncurban
+import async urban
 
 @friday_on_cmd(['ud', 'urban'],
                cmd_help={
