@@ -15,7 +15,7 @@ from countryinfo import CountryInfo
 
 
 @friday_on_cmd(
-    ["country", "Countries"],
+    ["country"],
     is_official=False,
     cmd_help={
         "help": "Get Information About Any Country",
