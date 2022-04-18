@@ -6,11 +6,11 @@ from quotefancy import get_quote
 
 
 @friday_on_cmd(
-    ['quotefancy'],
+    ['fancyquote', 'fq'],
     is_official=False,
     cmd_help={
     "help": "Get Random Quote from QuoteFancy.com",
-    "example": "{ch}quotefancy"
+    "example": "{ch}fancyquote or {ch}fq"
     })
 async def quotefancy(client, message):
     msg = await edit_or_reply(message, "`Please Wait !`")
