@@ -10,7 +10,7 @@ import time
 import aiohttp
 from main_startup.helper_func.basic_helpers import edit_or_reply, humanbytes, time_formatter
 from .helper_files.dl_ import AnyDL
-from fsplit.filesplit import Filesplit
+from filesplit.split import Split
 import os
 import re
 import pathlib
