@@ -9,7 +9,7 @@
 from anime_downloader.sites import get_anime_class
 from main_startup.core.decorators import friday_on_cmd
 from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
-from mal-api import Anime, AnimeSearch, Manga, MangaSearch
+from mal import Anime, AnimeSearch, Manga, MangaSearch
 
 
 @friday_on_cmd(
